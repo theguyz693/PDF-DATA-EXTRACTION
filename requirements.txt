@@ -7,3 +7,5 @@ pandas==2.2.1             # for handling tabular data and CSV exports
 layoutparser==0.3.4       # (optional) layout-aware OCR parsing
 pdf2image==1.17.0         # (optional) convert PDF pages to images
 beautifulsoup4==4.12.3    # (optional) export as HTML or clean extracted content
+
+pip install pdfplumber pymupdf pytesseract Pillow pandas layoutparser pdf2image beautifulsoup4 opencv-python
