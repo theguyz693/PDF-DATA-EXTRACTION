@@ -11,7 +11,10 @@ Extracts text from PDFs exports output files to `.txt`, `.docx`, `.html`, and `.
 
 ## Requirements
 
-- `pdfplumber`, `pytesseract`, `Pillow`, `python-docx`
+- `pdfplumber`, `pytesseract`, `Pillow`, `python-docx`,`fitz`
 - Tesseract-OCR installed (e.g. `C:\Program Files\Tesseract-OCR\tesseract.exe`)
 
-
+##Note
+requires the pdf file to be in the same folder 
+best outputs with invoice,admit cards,etc
+poor with data/table heavy files like marksheets
