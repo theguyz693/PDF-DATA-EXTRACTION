@@ -1,0 +1,9 @@
+PyMuPDF==1.23.7           # for reading and parsing PDFs (fitz)
+pdfplumber==0.10.2        # for detailed PDF layout and text extraction
+pytesseract==0.3.10       # OCR engine wrapper
+Pillow==10.2.0            # image handling (used by pytesseract)
+opencv-python==4.9.0.80   # optional: image pre-processing for OCR
+pandas==2.2.1             # for handling tabular data and CSV exports
+layoutparser==0.3.4       # (optional) layout-aware OCR parsing
+pdf2image==1.17.0         # (optional) convert PDF pages to images
+beautifulsoup4==4.12.3    # (optional) export as HTML or clean extracted content
