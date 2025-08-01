@@ -6,16 +6,14 @@ import os
 from docx import Document
 import csv
 
-# Set Tesseract path
 pytesseract.pytesseract.tesseract_cmd = r"C:\Program Files\Tesseract-OCR\tesseract.exe"
 
-# Ask user for multiple PDF input
+
 pdf_files = input("Enter PDF filenames separated by commas: ").strip().split(',')
 
-# Ask user for output format
+
 format_choice = input("Choose output format (txt / docx / html / csv): ").strip().lower()
 
-# Create output directory
 os.makedirs("output", exist_ok=True)
 
 for pdf_file in pdf_files:
@@ -53,7 +51,7 @@ for pdf_file in pdf_files:
         print(f"Error opening {PDF_PATH}: {e}")
         continue
 
-    # Save in selected format
+    # formats
     if format_choice == "txt":
         with open(f"{OUTPUT_BASENAME}.txt", "w", encoding="utf-8") as f:
             f.write(extracted_text)
